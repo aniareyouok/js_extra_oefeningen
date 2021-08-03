@@ -66,7 +66,23 @@ toUpperCase(secondSentence);
 // "Hallo" geeft string
 // [1, 2, 3] geeft object (ja echt!)
 
-console.log("Exercise Four")
+console.log("\nExercise Four")
+
+function dataTypePrinter(value) {
+    let dataType = typeof value;
+    if(dataType === "string") {
+        console.log(`${value} is a ${dataType}.`)
+    } else if (dataType === "undefined") {
+        console.log(`${value} is ${dataType}.`)
+    } else {
+        console.log(`${value} is an ${dataType}.`)
+    }
+}
+
+argumentOne = dataTypePrinter({name: 1});
+argumentTwo = dataTypePrinter(undefined);
+argumentThree = dataTypePrinter("Hallo");
+argumentFour = dataTypePrinter([1, 2, 3]);
 
 /* Opdracht 5 */
 // Schrijf een functie die een array van strings verwacht. Hoe lang die array is weet je niet van tevoren - het zouden zomaar 100 entries kunnen zijn.
