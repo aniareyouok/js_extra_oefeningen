@@ -8,23 +8,17 @@
 // 0 geeft false
 // 300 geeft true
 
-let userInput;
-const readline = require("readline");
+console.log(`\nExercise One`)
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
+function biggerThanZero(number) {
+    const result = number > 0;
+    console.log(`The number ${number} is bigger than 0: ${result}`)
+}
 
-rl.question("Please enter a positive or negative number: ", function (userInput) {
-    console.log(`You selected number ${userInput}`);
-    console.log(`This number is bigger than zero: ${biggerThanZero(userInput)}`);
-    rl.close();
-});
+tryOnce = biggerThanZero(-3);
+tryTwice = biggerThanZero(0);
+tryThrice = biggerThanZero(300);
 
-function biggerThanZero(userInput) {
-    return userInput > 0;
-};
 
 /* Opdracht 2 */
 // Schrijf een functie die twee getallen verwacht en teruggeeft of ze, opgetelt, gróter zijn dan 100.
@@ -33,7 +27,17 @@ function biggerThanZero(userInput) {
 // 8 en 92 geeft false
 // 89 en 14 geeft true
 
+console.log(`\nExercise Two`)
 
+function biggerThanHundred(number1, number2) {
+
+const result = number1 + number2 > 100;
+console.log(`Adding ${number1} and ${number2} we get a number bigger than 100: ${result}`);
+}
+
+test1 = biggerThanHundred(1, 28);
+test2 = biggerThanHundred(8, 92);
+test3 = biggerThanHundred(89, 14);
 
 /* Opdracht 3 */
 // Schrijf een functie die een zin verwacht en de eerste letter uit de zin omzet naar een hoofdletter.
