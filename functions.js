@@ -193,7 +193,24 @@ console.log(`The dutch word "${vrienden}" is a palindrome: ${thisIsApalindrome(v
 // "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
 
+console.log("\nExercise 7:\n-------------");
 
+function numberOfTimes(sentence, letter) {
+    let counter = 0;
+    for(let i = 0; i < sentence.length; i++) {
+        if(sentence.charAt(i) === letter) {
+            counter = counter + 1;
+        }
+    } return counter;
+}
+
+const strOne = "Hans en marietje lopen naar de supermarkt";
+const letterOne = "e";
+const strTwo = "Hans is zijn mondkapje vergeten";
+const letterTwo = "a";
+
+console.log(`The dutch sentence "${strOne}" contains the letter "${letterOne}" ${numberOfTimes(strOne, letterOne)} times.`);
+console.log(`The dutch sentence "${strTwo}" contains the letter "${letterTwo}" ${numberOfTimes(strTwo, letterTwo)} times.`);
 
 /* Opdracht 8 */
 // Schrijf een functie die bij iedere aanroep een random string id genereert van 8 tekens. Er mag gebruik gemaakt worden van de volgende karakters:
