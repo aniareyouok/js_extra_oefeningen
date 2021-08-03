@@ -173,7 +173,18 @@ console.log(`\nBut what do you read when spelling the english sentence "${bonus}
 
 console.log("\nExercise 6b:\n-------------");
 
+function thisIsApalindrome(word) {
+    let palindrome = readBackwards(word);
+    return word === palindrome;
+}
 
+const lepel = "lepel";
+const madam = "madam";
+const vrienden = "vrienden";
+
+console.log(`The dutch word "${lepel}" is a palindrome: ${thisIsApalindrome(lepel)}`);
+console.log(`The dutch word "${madam}" is a palindrome: ${thisIsApalindrome(madam)}`);
+console.log(`The dutch word "${vrienden}" is a palindrome: ${thisIsApalindrome(vrienden)}`);
 
 /* Opdracht 7 */
 // Schrijf een functie die een string en een letter verwacht. De functie telt hoe vaak die letter voorkomt in
