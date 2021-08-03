@@ -219,7 +219,22 @@ console.log(`The dutch sentence "${strTwo}" contains the letter "${letterTwo}" $
 // iizdX7Ax
 // gajxBhGs
 
+console.log("\nExercise 8:\n-------------");
 
+function randomWord() {
+    const library = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let randomWord = "";
+
+    for(let i = 0; i < 9; i++) {
+        let randomletter = library[Math.floor(Math.random()*library.length)];
+        randomWord = randomWord + randomletter
+    }
+    return randomWord;
+}
+
+console.log(`Your automatically generated password is: ${randomWord()}`);
+console.log(`Your automatically generated password is: ${randomWord()}`);
+console.log(`Your automatically generated password is: ${randomWord()}`);
 
 // ------------------------------- LEVEL 3 (optionele bonusopdrachten)
 
