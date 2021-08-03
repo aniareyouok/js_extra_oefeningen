@@ -148,7 +148,7 @@ console.log(`The longest word in the sentence:\n "${sentenceThree}" \nis:\n\n   
 console.log("\nLevel 2:\n-------------");
 console.log("\nExercise 6a:\n-------------");
 
-function readBackwords(word) {
+function readBackwards(word) {
     return word.split("").reverse().join("");
 }
 
@@ -157,11 +157,11 @@ const second = "vrienden";
 const third = "libellebil"
 const bonus = "was it a car or a cat i saw"
 
-console.log(`The dutch word "${first}" read backwords becomes: "${readBackwords(first)}"\n`);
-console.log(`The dutch word "${second}" read backwords becomes: "${readBackwords(second)}"\n`);
-console.log(`The dutch word "${third}" read backwords becomes: "${readBackwords(third)}"\n`);
+console.log(`The dutch word "${first}" read backwards becomes: "${readBackwards(first)}"\n`);
+console.log(`The dutch word "${second}" read backwards becomes: "${readBackwards(second)}"\n`);
+console.log(`The dutch word "${third}" read backwards becomes: "${readBackwards(third)}"\n`);
 
-console.log(`\nBut what do you read when spelling the english sentence "${bonus}" backwords?\nAnswer: ${readBackwords(bonus)}`);
+console.log(`\nBut what do you read when spelling the english sentence "${bonus}" backwards?\nAnswer: ${readBackwards(bonus)}`);
 
 // 6b. Schrijf een functie die een woord verwacht checkt of dit woord een palindroom is. Een palindroom is een
 // spiegelwoord: het is hetzelfde zowel vooruit als achterstevoren. Als dit zo is, geeft de functie true terug,
@@ -170,6 +170,8 @@ console.log(`\nBut what do you read when spelling the english sentence "${bonus}
 // "lepel" geeft true
 // "madam" geeft true
 // "vrienden" geeft false
+
+console.log("\nExercise 6b:\n-------------");
 
 
 
