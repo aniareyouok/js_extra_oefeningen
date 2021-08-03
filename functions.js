@@ -91,7 +91,20 @@ argumentFour = dataTypePrinter([1, 2, 3]);
 // ["abra", "cadabra"] geeft "abracadabra"
 // ["a", "b", "c", "d", "e"] geeft "abcde"
 
+console.log("\nExercise Five")
 
+function makeWord(arrayOfStrings) {
+    let completeWord = "";
+
+    for(let i = 0; i < arrayOfStrings.length; i++) {
+        completeWord = completeWord + arrayOfStrings[i];
+    }
+    console.log(completeWord);
+}
+
+const firstWord = makeWord(["abra", "cadabra"]);
+const extraWord = makeWord(["sim", "sa", "la", "bim!"])
+const secondWord = makeWord(["a", "b", "c", "d", "e"] );
 
 /* Opdracht 6 */
 // Schrijf een functie die een zin verwacht en het langste woord uit die zin teruggeeft. Als er meerdere woorden het langst zijn, wordt het laatste langste woord terug gegeven.
