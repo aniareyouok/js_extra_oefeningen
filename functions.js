@@ -8,7 +8,7 @@
 // 0 geeft false
 // 300 geeft true
 
-console.log(`\nExercise One`)
+console.log(`\nExercise One:\n-------------`)
 
 function biggerThanZero(number) {
     const result = number > 0;
@@ -27,7 +27,7 @@ tryThrice = biggerThanZero(300);
 // 8 en 92 geeft false
 // 89 en 14 geeft true
 
-console.log(`\nExercise Two`)
+console.log(`\nExercise Two:\n-------------`)
 
 function biggerThanHundred(number1, number2) {
 
@@ -45,7 +45,7 @@ test3 = biggerThanHundred(89, 14);
 // "de kat krabt de krullen van de trap" geeft "De kat krabt de krullen van de trap"
 // "programmeren is super leuk!" geeft "Programmeren is super leuk!"
 
-console.log("\nExercise Three")
+console.log("\nExercise Three:\n-------------")
 
 function toUpperCase(sentence) {
     let sentenceCapitalized = sentence.charAt(0).toUpperCase() + sentence.slice(1);
@@ -66,7 +66,7 @@ toUpperCase(secondSentence);
 // "Hallo" geeft string
 // [1, 2, 3] geeft object (ja echt!)
 
-console.log("\nExercise Four")
+console.log("\nExercise Four:\n-------------")
 
 function dataTypePrinter(value) {
     let dataType = typeof value;
@@ -91,7 +91,7 @@ argumentFour = dataTypePrinter([1, 2, 3]);
 // ["abra", "cadabra"] geeft "abracadabra"
 // ["a", "b", "c", "d", "e"] geeft "abcde"
 
-console.log("\nExercise Five")
+console.log("\nExercise Five:\n-------------")
 
 function makeWord(arrayOfStrings) {
     let completeWord = "";
@@ -113,6 +113,28 @@ const secondWord = makeWord(["a", "b", "c", "d", "e"] );
 // "De eindopdracht telt voor 30 ECTS" geeft "eindopdracht"
 // "Een API staat voor Application Programming Interface. Met deze technologie zul je vaak gaan werken." geeft "technologie"
 
+console.log("\nExercise Six:\n-------------");
+
+function longestWord(sentence) {
+    let longestWord = "test";
+    let sentenceAsArray = sentence.split(" ");
+    for (let i = 0; i < sentenceAsArray.length; i++) {
+        const word = sentenceAsArray[i];
+
+        if (word.length >= longestWord.length) {
+            longestWord = word;
+        }
+    }
+    return longestWord;
+}
+
+const sentenceOne = "Frontend web development";
+const sentenceTwo = "De eindopdracht telt voor 30 ECTS";
+const sentenceThree = "Een API staat voor Application Programming Interface. Met deze technologie zul je vaak gaan werken.";
+
+console.log(`The longest word in the sentence:\n "${sentenceOne}" \nis:\n\n     ${longestWord(sentenceOne)} \n\n`);
+console.log(`The longest word in the sentence:\n "${sentenceTwo}" \nis:\n\n     ${longestWord(sentenceTwo)} \n\n`);
+console.log(`The longest word in the sentence:\n "${sentenceThree}" \nis:\n\n     ${longestWord(sentenceThree)} \n\n`);
 
 // -------------------------------  LEVEL 2
 
