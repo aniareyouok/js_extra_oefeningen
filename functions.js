@@ -45,7 +45,18 @@ test3 = biggerThanHundred(89, 14);
 // "de kat krabt de krullen van de trap" geeft "De kat krabt de krullen van de trap"
 // "programmeren is super leuk!" geeft "Programmeren is super leuk!"
 
+console.log("\nExercise Three")
 
+function toUpperCase(sentence) {
+    let sentenceCapitalized = sentence.charAt(0).toUpperCase() + sentence.slice(1);
+    console.log(sentenceCapitalized);
+}
+
+const firstSentence = "de kat krabt de krullen van de trap"
+const secondSentence = "programmeren is super leuk!"
+
+toUpperCase(firstSentence);
+toUpperCase(secondSentence);
 
 /* Opdracht 4 */
 // Schrijf een functie die een argument verwacht en het datatype teruggeeft (boolean, object, undefined, number, string,function)
