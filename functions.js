@@ -66,7 +66,7 @@ toUpperCase(secondSentence);
 // "Hallo" geeft string
 // [1, 2, 3] geeft object (ja echt!)
 
-
+console.log("Exercise Four")
 
 /* Opdracht 5 */
 // Schrijf een functie die een array van strings verwacht. Hoe lang die array is weet je niet van tevoren - het zouden zomaar 100 entries kunnen zijn.
