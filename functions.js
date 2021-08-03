@@ -8,7 +8,23 @@
 // 0 geeft false
 // 300 geeft true
 
+let userInput;
+const readline = require("readline");
 
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+rl.question("Please enter a positive or negative number: ", function (userInput) {
+    console.log(`You selected number ${userInput}`);
+    console.log(`This number is bigger than zero: ${biggerThanZero(userInput)}`);
+    rl.close();
+});
+
+function biggerThanZero(userInput) {
+    return userInput > 0;
+};
 
 /* Opdracht 2 */
 // Schrijf een functie die twee getallen verwacht en teruggeeft of ze, opgetelt, gróter zijn dan 100.
