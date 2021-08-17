@@ -25,8 +25,25 @@ emailList(emailadresses, "aniareyouok@riseup.net");
 /* Opdracht 2 */
 // 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
 
+console.log('\nExercise 2a\n-------------');
+
+function findEmail(list, newEmail) {
+    if(list.includes(newEmail)) {
+    console.log(`Yes, ${newEmail} is in our list of e-mailadresses!`)
+    } else {
+        console.log(`Sorry, we can't find ${newEmail} in our list of e-mailadresses.`)
+    }
+}
+
+findEmail(emailadresses, "n.stuivenberg@novi.nl");
+findEmail(emailadresses, "some@randomemail.com");
+
 // 2b. Schrijf een herbruikbare functie die een email-lijst en achternaam verwacht. Wanneer er een emailadres met die achternaam voorkomt, wordt het emailadres teruggegeven.
 // Als er niets wordt gevonden, returnt de functie null.
+
+console.log('\nExercise 2b\n-------------');
+
+
 
 /* Opdracht 3 */
 // 3a. Collega's staan in de emaillijst op volgorde waarin ze bij Novi zjin komen werken. Nu blijkt echter dat een andere nieuwe collega, Tess,
