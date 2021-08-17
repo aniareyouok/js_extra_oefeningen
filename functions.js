@@ -245,7 +245,28 @@ console.log(`Your automatically generated password is: ${randomWord()}`);
 // lastEntry([3, 6, 9, 17, 4, 6, 25, 8]) geeft 8
 // lastEntry([46, 65, 34, 204, 190, 89], 3) geeft [204, 190, 89]
 
+console.log("\nExercise 9:\n-------------");
 
+function lastEntry(array, n) {
+
+    if(n === undefined) {
+        let number = array.pop();
+        array.push(number);
+        console.log(`\nThe current entry is: ${array} \nThe last number is: ${number}`);
+    }
+
+    if(typeof n === 'number') {
+        let lastEntries = [];
+        for(let i = array.length-n; i < array.length; i++) {
+            lastEntries = lastEntries + " " + array[i];
+        }
+        console.log(`\nThe current entry is: ${array} and ${n} \nThe last ${n} entries in this array are: ${lastEntries}`)
+    }
+}
+
+lastEntry([3, 6, 9, 17, 4, 6, 25, 8]);
+lastEntry([46, 65, 34, 204, 190, 89], 3);
+lastEntry([24, 05, 1980, 27, 02, 2019], 2);
 
 /* Opdracht 10 */
 // Schrijf een functie die geen parameters verwacht en de getallen 1 tot 100 print.
