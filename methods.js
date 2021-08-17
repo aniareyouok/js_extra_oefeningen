@@ -13,6 +13,14 @@ console.log(`E-mailaddressen van medewerkers: \n${emailadresses.join(", ")}`);
 // 1b. Er zullen ongetwijfeld vaker emailadressen toegevoegd moeten worden. Binnen het bedrijf zijn er echter lijsten voor medewerkers,
 // maar ook voor studenten. Schrijf een herbruikbare functie die een email-lijst en nieuw-emailadres verwacht en deze vervolgens toevoegt aan die lijst.
 
+console.log('\nExercise 1b\n-------------');
+
+function emailList(list, newEmail) {
+    list.push(newEmail);
+    console.log(`${newEmail} has been added to the list of e-mailadresses:\n${list.join(", ")}`);
+}
+
+emailList(emailadresses, "aniareyouok@riseup.net");
 
 /* Opdracht 2 */
 // 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
