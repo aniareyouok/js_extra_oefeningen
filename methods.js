@@ -94,3 +94,12 @@ addYbeforeZ("debaas@novi.nl", "n.eeken@novi.nl");
 // op welke plek in de lijst dit emailadres staat. Dit gebeurt helaas wel vaker. Schrijf een functie die drie parameters verwacht:
 // een array met emailadressen, het oude emailadres dat vervangen moet worden, en het nieuwe emailadres.
 // TIP: schrijf 'm eerst zoals je hem zou toepassen op bovenstaande array en schrijf die code dan om naar een functie
+
+console.log('\nExercise 4\n-------------');
+
+function adjustEmail(list, oldEmail, newEmail) {
+    list.splice(list.indexOf(oldEmail), 1, newEmail);
+    console.log(`${oldEmail} has been removed and replaced with ${newEmail}: \n\n${list.join(",\n")}\n`);
+}
+
+adjustEmail(emailadresses, "m.vandergeest@novi-education.nl", "m.vandergeest@novi.nl");
