@@ -350,3 +350,5 @@ function hallo(names) {
 hallo(["Nick", "Nova", "Mitchel", "Arjen"]);
 hallo(["Piet", "Henk"]);
 hallo(["A", "B", "C", "D", "E", "F"]);
+
+console.log("\n testing git");
