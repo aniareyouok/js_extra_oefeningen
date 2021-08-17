@@ -71,12 +71,22 @@ console.log('\nExercise 3a\n-------------');
 
 function addEmail(email) {
     emailadresses.splice(emailadresses.length-2, 0, email);
-    console.log(`${email} has been added to the list before Melissa: \n${emailadresses.join(", ")}`);
+    console.log(`${email} has been added to the list before Melissa: \n\n${emailadresses.join(", \n")}`);
 }
 
 addEmail("t.mellink@novi.nl")
 
 // 3b. Bij de vorige vraag wisten we gelukkig waar Melissa stond in de lijst. Maar soms weten we dat niet! Schrijf een functie die emailadres Y bijvoegt in de lijst vóór emailadres Z.
+
+console.log('\nExercise 3b\n-------------');
+
+function addYbeforeZ(Y, Z) {
+    emailadresses.splice(emailadresses.indexOf(Z), 0, Y);
+    console.log(`${Y} has been added to the list before ${Z}: \n\n${emailadresses.join(", \n")}\n`);
+}
+
+addYbeforeZ("new@email.org", "n.stuivenberg@novi.nl");
+addYbeforeZ("debaas@novi.nl", "n.eeken@novi.nl");
 
 
 /* Opdracht 4 */
