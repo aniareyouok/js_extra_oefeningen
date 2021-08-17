@@ -69,6 +69,13 @@ getEmail(emailadresses, "Öhman");
 
 console.log('\nExercise 3a\n-------------');
 
+function addEmail(email) {
+    emailadresses.splice(emailadresses.length-2, 0, email);
+    console.log(`${email} has been added to the list before Melissa: \n${emailadresses.join(", ")}`);
+}
+
+addEmail("t.mellink@novi.nl")
+
 // 3b. Bij de vorige vraag wisten we gelukkig waar Melissa stond in de lijst. Maar soms weten we dat niet! Schrijf een functie die emailadres Y bijvoegt in de lijst vóór emailadres Z.
 
 
