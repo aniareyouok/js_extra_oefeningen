@@ -43,13 +43,31 @@ findEmail(emailadresses, "some@randomemail.com");
 
 console.log('\nExercise 2b\n-------------');
 
+function getEmail(list, lastName) {
+    let foundEmail;
+    for(let i = 0; i < list.length; i++) {
+        if (list[i].includes(lastName.toLowerCase())){
+            foundEmail = list[i];
+        }
+    }
 
+    if(foundEmail !== undefined) {
+        console.log(`We found this e-mailadress containing the name "${lastName}": ` + foundEmail);
+    } else {
+        console.log(`Sorry, we couldn't find any e-mailadress containing the name "${lastName}".`);
+    }
+}
+
+getEmail(emailadresses, "Stuivenberg");
+getEmail(emailadresses, "Eeken");
+getEmail(emailadresses, "Öhman");
 
 /* Opdracht 3 */
 // 3a. Collega's staan in de emaillijst op volgorde waarin ze bij Novi zjin komen werken. Nu blijkt echter dat een andere nieuwe collega, Tess,
 // bij Novi is komen werken vóór Melissa. Haar e-mailadres (t.mellink@novi.nl) moet dus worden toegevoegd op de één na laatste plek.
 // Let op: je weet niet hoe lang de lijst is!
 
+console.log('\nExercise 3a\n-------------');
 
 // 3b. Bij de vorige vraag wisten we gelukkig waar Melissa stond in de lijst. Maar soms weten we dat niet! Schrijf een functie die emailadres Y bijvoegt in de lijst vóór emailadres Z.
 
