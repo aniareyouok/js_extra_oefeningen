@@ -321,7 +321,7 @@ function fizzBuzz() {
             console.log(i);
         }
     }
-};
+}
 
 fizzBuzz();
 
@@ -333,3 +333,20 @@ fizzBuzz();
 // ["Piet", "Henk"] geeft "Hoi Piet en Henk!"
 // ["A", "B", "C", "D", "E", "F"] geeft "Hoi A, B, C, D, E en F!"
 
+console.log("\nExercise 11:\n-------------");
+
+function hallo(names) {
+    if (names.length > 2) {
+        indexOfSecondLastName = names.length - 2;
+        lastName = names.pop();
+        secondLastName = names.pop();
+        names.splice(indexOfSecondLastName, indexOfSecondLastName)
+        console.log(`Hoi ${names.join(", ")}, ${secondLastName} en ${lastName}!`)
+    } else {
+        console.log(`Hoi ${names.join(" en ")}!`)
+    }
+}
+
+hallo(["Nick", "Nova", "Mitchel", "Arjen"]);
+hallo(["Piet", "Henk"]);
+hallo(["A", "B", "C", "D", "E", "F"]);
