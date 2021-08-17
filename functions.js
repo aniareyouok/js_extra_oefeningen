@@ -306,6 +306,24 @@ lastEntry([24, 05, 1980, 27, 02, 2019], 2);
 // FizzBuzz
 // etc.
 
+console.log("\nExercise 10:\n-------------");
+
+function fizzBuzz() {
+
+    for (let i = 1; i < 101; i++) {
+        if ((i % 3 === 0) && (i % 5 === 0)) {
+            console.log('Fizz Buzz!');
+        } else if (i % 5 === 0) {
+            console.log('Buzz');
+        } else if (i % 3 === 0 ) {
+            console.log('Fizz');
+        } else {
+            console.log(i);
+        }
+    }
+};
+
+fizzBuzz();
 
 
 /* Opdracht 11 */
